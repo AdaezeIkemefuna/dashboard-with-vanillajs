@@ -70,6 +70,7 @@ img {
   display: grid;
   grid-template-columns: 15rem auto 23rem;
   height: 100vh;
+  padding-left: 1.2rem;
 }
 
 .primary {
@@ -405,6 +406,11 @@ main .number{
   font-size: 0.9rem;
   box-shadow: var(--box-shadow);
   color: var(--color-dark);
+  transition: all 300ms ease;
+}
+
+.right .card:hover{
+  box-shadow: none;
 }
 
 .right .component{
@@ -416,4 +422,73 @@ main .number{
 
 .sales-analytics{
   margin-top: 2rem;
+}
+
+.sales-analytics h3:first-child{
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.sales-analytics .card2{
+ background-color: var(--color-white);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding:1.7rem;
+  border-radius: var(--border-radius-3);
+  font-size: 0.85rem;
+  box-shadow: var(--box-shadow);
+  color: var(--color-dark);
+  margin-bottom: 0.7rem;
+  transition: all 300ms ease;
+}
+
+.sales-analytics .card2:hover{
+  box-shadow: none;
+}
+
+.sales-analytics .card2 .side{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sales-analytics .card2 .side .span{
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sales-analytics .card2 .side .span.cart{
+  background-color: var(--color-primary);
+}
+
+.sales-analytics .card2 .side .span.shop{
+  background-color: var(--color-danger);
+}
+
+.sales-analytics .card2 .side .span.person{
+  background-color: var(--color-success);
+}
+
+.sales-analytics .card2.addProducts{
+  background-color: transparent;
+  border: 2px dashed var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 300ms ease;
+  
+}
+
+.sales-analytics .card2.addProducts:hover{
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
